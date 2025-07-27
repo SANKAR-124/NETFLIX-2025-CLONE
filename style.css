@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-    background-image: url("IN-en-20250707-TRIFECTA-perspective_4faa9280-a2c5-4e07-aafc-a45ce43fea09_large.jpg");
+    background-image: url(IN-en-20250707-TRIFECTA-perspective_4faa9280-a2c5-4e07-aafc-a45ce43fea09_large.jpg);
     height: 100vh;
     /* width:80vw; */
     background-position: center center;
@@ -51,7 +51,7 @@ nav {
     height: 62px;
     padding-top: 15px;
     gap: 30px;
-    box-shadow:inset 0px 38px 30px 0px black;
+    box-shadow: inset 0px 38px 30px 0px black;
 }
 
 @media screen and (max-width:900px) {
@@ -65,8 +65,12 @@ nav {
         max-width: 97vw;
     }
 }
+@media screen and (max-width: 365px) {
+    nav {
+        max-width: 87vw;
+    }
 
-
+}
 nav img {
     color: red;
     width: 140px;
@@ -239,6 +243,235 @@ nav #language {
     margin-right: 10px;
 }
 
+.error {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+.seven {
+    position: relative;
+    z-index: 11;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.trend {
+    text-align: left;
+    width: 80%;
+    display: inline-flex;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.eight {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* overflow: scroll hidden; */
+    /* overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    overflow-wrap: normal; */
+    height: 340px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* grid-template-rows: 1fr 1fr; */
+    z-index: 11;
+
+}
+
+.eight ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: mandatory;
+    overflow-wrap: normal;
+    width: 83%;
+    height: 310px;
+    /* scrollbar-width: none; */
+    scroll-behavior: smooth;
+}
+
+.box3 {
+
+    height: 275px;
+    width: 195px;
+    background-color: green;
+    /* border: 3px solid grey; */
+    position: relative;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box3:hover {
+    transform: scale(1.05);
+
+}
+
+.box4 {
+    height: 275px;
+    width: 195px;
+    background-color: green;
+    /* border: 3px solid grey; */
+    position: relative;
+    margin-left: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box4:hover {
+    transform: scale(1.05);
+}
+
+.box4 span {
+    font-size: 100px;
+    line-height: 49px;
+    font-weight: 900;
+    position: absolute;
+    z-index: 14;
+    /* top: 180px; */
+    bottom: 20px;
+    right: 100px;
+    color: rgb(30, 29, 29);
+    text-shadow: #192247;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.box3 span {
+    font-size: 100px;
+    line-height: 49px;
+    font-weight: 900;
+    position: absolute;
+    z-index: 14;
+    /* top: 180px; */
+    bottom: 20px;
+    right: 155px;
+    color: rgb(30, 29, 29);
+    text-shadow: #192247;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.btn2 {
+    display: flex;
+    position: absolute;
+    left: 90px;
+    /* background-color: rgb(43, 42, 42); */
+    /* padding-bottom: 50px;
+    padding-top: 50px; */
+    border-radius: 15px;
+    /* cursor: pointer; */
+}
+
+.btn2 button {
+    background-color: rgb(43, 42, 42);
+    color: whitesmoke;
+    /* padding: 0px; */
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+    border: 2px solid rgb(43, 42, 42);
+    cursor: pointer;
+}
+
+/* .btn2:hover {
+    background-color: rgba(31, 30, 30, 0.775);
+} */
+
+.btn2 button:hover {
+    background-color: rgba(31, 30, 30, 0.775);
+    border: 2px solid rgba(31, 30, 30, 0.775);
+}
+
+
+.btn4 {
+    display: flex;
+    position: absolute;
+    right: 90px;
+    /* background-color: rgb(43, 42, 42); */
+    /* padding-bottom: 50px;
+    padding-top: 50px; */
+    border-radius: 15px;
+    /* cursor: pointer; */
+}
+
+.btn4 button {
+    background-color: rgb(43, 42, 42);
+    color: whitesmoke;
+    /* padding: 0px; */
+    border: 2px solid rgb(43, 42, 42);
+    cursor: pointer;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+}
+
+/* .btn4:hover {
+    background-color: rgba(31, 30, 30, 0.775);
+} */
+
+.btn4 button:hover {
+    background-color: rgba(31, 30, 30, 0.775);
+    border: 2px solid rgba(31, 30, 30, 0.775);
+}
+
+.nav-button.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Show buttons when needed */
+.nav-button.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media screen and (max-width:560px) {
+    .btn4 {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        border-radius: 15px;
+    }
+    .btn2{
+        display: flex;
+        position: absolute;
+        left: 15px;
+        border-radius: 15px;
+        z-index: 17;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .btn4 {
+        display: flex;
+        position: absolute;
+        right: 2px;
+        border-radius: 15px;
+    }
+    .btn2{
+        display: flex;
+        position: absolute;
+        left: 15px;
+        border-radius: 15px;
+        z-index: 17;
+    }
+
+}
+
+
 .four {
     position: relative;
     color: white;
@@ -278,6 +511,7 @@ nav #language {
 .box1 :first-child {
     font-weight: 500;
     font-size: 24px;
+    padding-bottom: 5px;
 }
 
 .box1 :nth-child(2) {
@@ -388,6 +622,27 @@ nav #language {
     bottom: 10px;
     font-weight: 800;
     filter: invert(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    /* Same as SVG width */
+    height: 29px;
+    /* Same as SVG height */
+}
+
+
+.rotate-icon {
+    /* width: 60px;
+    height: 60px; */
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+/* When rotated, the icon turns 45 degrees */
+.rotate-icon.rotated {
+    transform: rotate(45deg);
+    /* transform-origin: center center; */
 }
 
 .six {
@@ -506,4 +761,9 @@ footer .query u {
 
 .symbol1 {
     position: relative;
+}
+
+#language-foot {
+    background-color: rgba(23, 23, 23, 0.696);
+    margin-right: 10px;
 }
