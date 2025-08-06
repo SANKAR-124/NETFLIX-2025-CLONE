@@ -5,60 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign in</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        h1{
-            text-align: center;
-        }
-        .six {
-            height: 80vh;
-            width: 1500px;
-            background-color: rgb(255, 255, 255);
-            border: 2px solid rgb(255, 254, 254);
-            margin-top: 30vh;
-            /* display: inline-block; */
-            position: absolute;
-        }
-
-        .six :first-child {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border: 3px solid black;
-            border-radius: 55px;
-            /* display: flex; */
-            bottom: 0;
-            position: absolute;
-            left: 0;
-            animation: ball1 4s linear infinite, ball2 1s ease-out infinite alternate
-        }
-
-        @keyframes ball1 {
-            from {
-                left: 0;
-            }
-
-            to {
-                left: 100%;
-            }
-        }
-
-        @keyframes ball2 {
-            from {
-                bottom: 0;
-            }
-
-            to {
-                bottom: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="signin.css">
+    
 </head>
 <body>
-   <h1>YOU CAN'T SIGN IN</h1> 
-
-
-   <div class="six">
-        <div></div>
+<main>
+    <nav class="navv">
+        <span><img src="logo.svg" alt="logo"></span>
+    </nav>
+    <div class="one"></div>
+    <div class="box">
+        <p>Sign In</p>
     </div>
+</main>
+
 </body>
 </html>
