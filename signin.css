@@ -17,18 +17,25 @@ body {
 
 main {
     background-image: url(assets/images/IN-en-20250707-TRIFECTA-perspective_4faa9280-a2c5-4e07-aafc-a45ce43fea09_large.jpg);
-    height: 100vh;
+    height: 115vh;
     background-position: center center;
     background-size: max(1200px, 100vw);
     position: relative;
     /* opacity: 0.55; */
     /* z-index: -1; */
 }
+@media screen and (max-width:600px) {
+    main{
+        background-image:none;
+        /* z-index: 1; */
+        height:90vh;
+    }
+}
 
 main .one {
     position: absolute;
     top: 0px;
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     opacity: 0.55;
     background-color: black;
@@ -55,11 +62,258 @@ nav span img{
      text-align: left;
     opacity: 1;
 }
+@media screen and (max-width:600px) {
+    main .one{
+        height:90vh;
+    }
+}
 
 .box{
     width: 500px;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.36);
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.785);
     display: inline-block;
     color: white;
+}
+.sign1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    margin-left :60px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width:600px) {
+    .sign1{
+        margin-top:100px;
+        margin-left: 40px;
+    }
+    .box{
+        /* margin-bottom: 10px; */
+    }
+    
+}
+.btn{
+    padding: 10px 15px;
+    /* font-weight: bold; */
+    width: 328px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 15px;
+    margin-bottom: 15px;
+    background-color: rgba(23, 23, 23, 0.696);
+    font-size: 16px;
+    border: 2px solid rgba(73, 65, 65, 0.868);
+    font-weight: 700;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding:13px 160px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    border: none;
+}
+.or{
+    font-size: 16px;
+    font-weight:600;
+    padding-bottom: 8px;
+}
+.btn-grey{
+    position: relative;
+    z-index: 2;
+    padding:10px 120px;
+    color: white;
+    background-color: rgba(180, 165, 165, 0.344);
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.for-pass{
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+.for-pass a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+@media screen and (max-width:600px) {
+    .btn{
+        padding: 12px 45px;
+    }
+    .btn-red{
+         padding:12px 185px;
+    }
+    .btn-grey{
+         padding:12px 145px;
+    }
+}
+.me{
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    margin-left :60px;
+    font-size: 19px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.me input[type="checkbox"]{
+    /* padding: 3px; */
+    height: 15px;
+    width: 20px;
+    color:black;
+}
+
+.sign{
+    position: relative;
+    z-index: 2;
+    margin-left :60px;
+    text-align: left;
+    color: grey;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.sign a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.learn0{
+    width: 380px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+    color: grey;
+}
+.learn{
+    cursor: pointer;
+    color: rgb(94, 126, 255);
+    text-decoration: underline;
+}
+@media screen and (max-width:600px) {
+    .me{
+        margin-left :40px;
+    }
+    .sign{
+        margin-left :40px;
+    }
+    .learn0{
+         width: 420px;
+         padding-bottom: 20px;
+    }
+}
+footer {
+    color: rgb(182, 178, 178);
+    /* max-width: 85vw; */
+    margin: auto;
+    text-align: left;
+    width: 100vw;
+    /* margin-top: 30px; */
+    background-color: rgb(19, 19, 19);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgb(182, 178, 178);
+    padding: 14px;
+    text-align: left;
+width: 80vw;
+}
+@media screen and (max-width:900px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100vw;
+    }
+    footer{
+        width:125vw;
+        position: relative;
+        z-index: 3;
+    }
+    
+}
+.footer-itm {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+footer .query {
+    /* margin: 2px 30vw; */
+    text-align: left;
+    padding: 34px 0px 0px 0px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.footer a {
+    color: rgb(182, 178, 178);
+    font-size: 14px;
+}
+
+footer .query u {
+    cursor: pointer;
+    text-decoration: none;
+}
+@media screen and (max-width:600px) {
+    footer .query{
+        padding-top: 30px;
+    }
+}
+.btn1{
+    padding: 4px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0.396);
+    background-color: black;
+    margin-left: 8px;
+}
+.sankar {
+    text-align: center;
+    color: white;
+    padding:30px;
+}
+.footer-lang{
+    position: relative;
+}
+.symbol {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 11;
+    /* top: 10px; */
+    left: 15px;
+    bottom:12px;
 }
