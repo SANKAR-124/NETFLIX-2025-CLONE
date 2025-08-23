@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-main {
+.main {
     background-image: url(assets/images/IN-en-20250707-TRIFECTA-perspective_4faa9280-a2c5-4e07-aafc-a45ce43fea09_large.jpg);
     height: 115vh;
     background-position: center center;
@@ -26,14 +26,14 @@ main {
 }
 
 @media screen and (max-width:600px) {
-    main {
+    .main {
         background-image: none;
         /* z-index: 1; */
         height: 80vh;
     }
 }
 
-main .one {
+.main .one {
     position: absolute;
     top: 0px;
     height: 115vh;
@@ -67,7 +67,7 @@ nav span img {
 }
 
 @media screen and (max-width:600px) {
-    main .one {
+    .main .one {
         height: 80vh;
     }
 }
@@ -95,12 +95,13 @@ nav span img {
 @media screen and (max-width:600px) {
     .sign1 {
         margin-top: 100px;
-        margin-left: 40px;
+        margin-left: 0px;
     }
 
     .box {
         /* margin-bottom: 10px; */
         /* width:400px; */
+        margin-left: 110px;
     }
 
 }
@@ -173,15 +174,16 @@ nav span img {
 
 @media screen and (max-width:600px) {
     .btn {
-        padding: 12px 45px;
+        padding: 20px 80px;
     }
 
     .btn-red {
-        padding: 12px 185px;
+        padding: 17px 185px;
+        padding-right:245px;
     }
 
     .btn-grey {
-        padding: 12px 145px;
+        padding: 18px 175px;
     }
 }
 
@@ -243,15 +245,15 @@ nav span img {
 
 @media screen and (max-width:600px) {
     .me {
-        margin-left: 40px;
+        margin-left: 7px;
     }
 
     .sign {
-        margin-left: 40px;
+        margin-left: 7px;
     }
 
     .learn0 {
-        width: 420px;
+        width: 480px;
         padding-bottom: 20px;
     }
 }
@@ -288,7 +290,7 @@ footer {
     }
 
     footer {
-        width: 102vw;
+        width: 137vw;
         position: relative;
         /* z-index: 3; */
     }
