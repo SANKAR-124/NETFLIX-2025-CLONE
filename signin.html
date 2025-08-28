@@ -20,9 +20,15 @@
             <p class="sign1">Sign In</p>
             <input type="email number" id="mail" class="btn" placeholder="Email or mobile number">
             <input type="password" id="pass" class="btn" placeholder="Password">
+            <div id="errorMessage" class="error-message">
+                <!-- Incorrect email or password. Please try again. -->
+            </div>
             <button id="signin" type="submit" class="btn-red">Sign In</button>
             <p class="or">OR</p>
             <button id="code" type="submit" class="btn-grey">Use a sign-in code</button>
+            <div id="errormessage" class="error-message">
+                <!-- Incorrect email or password. Please try again. -->
+            </div>
             <div class="for-pass"><a href="">Forgot password? </a></div>
             <div class="me">
 
@@ -78,6 +84,61 @@
             &copy;SANKAR ONLY
         </div>
     </footer>
+
+    <script>
+        const signInBtn = document.getElementById('signin');
+        //        
+        let errorTimeout;
+
+        // Add click event listener
+        signInBtn.addEventListener('click', function () {
+            // Clear any existing timeout
+            if (errorTimeout) {
+                clearTimeout(errorTimeout);
+            }
+
+            // Get the error container
+            const errorContainer = document.getElementById('errorMessage');
+            const box1 = document.getElementById('mail');
+            const box2 = document.getElementById('pass');
+            if (errorContainer) {
+                // Show the error message
+                errorContainer.innerHTML = '<p style="color: red;">Incorrect email or password. Please try again.</p>';
+                errorContainer.style.display = 'block';
+                box1.style.border = '2px solid Red';
+                box2.style.border = '2px solid Red';
+                // Auto-hide the error after 6 seconds
+                errorTimeout = setTimeout(() => {
+                    errorContainer.style.display = 'none';
+                    errorContainer.innerHTML = '';
+                    box1.style.border = '2px solid grey';
+                    box2.style.border = '2px solid grey';
+                }, 6000);
+            }
+        });
+        const codeBtn=document.getElementById('code')
+        codeBtn.addEventListener('click', function () {
+            // Clear any existing timeout
+            if (errorTimeout) {
+                clearTimeout(errorTimeout);
+            }
+
+            // Get the error container
+            const errorContainerr = document.getElementById('errormessage');
+
+            if (errorContainerr) {
+                // Show the "feature not available" error message
+                errorContainerr.innerHTML = '<p style="color: red;">Feature not available yet.</p>';
+                errorContainerr.style.display = 'block';
+
+                // Auto-hide the error after 5 seconds
+                errorTimeout = setTimeout(() => {
+                    errorContainerr.style.display = 'none';
+                    errorContainerr.innerHTML = '';
+                }, 5000);
+            }
+        });
+    </script>
 
 </body>
 

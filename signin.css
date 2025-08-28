@@ -163,6 +163,11 @@ nav span img {
     margin-bottom: 10px;
     border: none;
 }
+.error-message.show {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
 
 .or {
     font-size: 16px;
@@ -173,7 +178,7 @@ nav span img {
 .btn-grey {
     position: relative;
     z-index: 2;
-    padding: 13px 160px;
+    padding: 13px 120px;
     color: white;
     background-color: rgba(180, 165, 165, 0.344);
     border-radius: 7px;
