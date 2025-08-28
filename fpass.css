@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Martel Sans", "Martel Sans", sans-serif, Helvetica, sans-serif, 'Segoe UI';
+    font-weight: 600;
+    font-style: normal
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+main {
+    background-image: url(assets/images/bg.jpg);
+    width: 100%;
+    height: 125vh;
+    /* background-position:  right ; */
+    background-size: max(1597px, 100vw);
+    background-repeat: no-repeat;
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 62%;
+    padding-top: 25px;
+}
+
+nav img {
+    width: 150px
+}
+
+.btn-sm {
+    background-color: red;
+}
+
+.btn1 {
+    padding: 7px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0.396);
+}
+@media screen and (max-width:541px) {
+    nav{
+        gap:50%;
+    }
+    nav img{
+        width:100px
+    }
+    .btn1{
+        padding: 5px 16px;
+    }
+    main{
+        height:110vh;
+    }
+}
+@media screen and (max-width:1025px) {
+    main{
+        height: 76vh;
+    }
+}
+@media screen and (max-width:921px) {
+    main{
+        height:78vh;
+    }
+}
+@media screen and (max-width:821px) {
+    main{
+        height:70vh;
+    }
+}
+@media screen and (max-width:769px) {
+    main{
+        height: 75vh;
+    }
+    nav img{
+        width:100px;
+    }
+}
+@media screen and (max-width:432px) {
+    main{
+        height: 90vh;
+    }
+}
+@media screen and (max-width:392px) {
+    main{
+        height: 115vh;
+    }
+    nav{
+        gap:40%;
+    }
+}
+@media screen and (max-width:379px) {
+    main{
+        height: 145vh;
+    }
+}
+
+.boxx {
+    display: inline-block;
+    height: 600px;
+    /* width:100%; */
+    margin-top: 100px;
+}
+
+.box {
+    background-color: rgb(232, 232, 232);
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    flex-direction: column;
+    color: black;
+    max-width: 550px;
+    min-height: 450px;
+    position: relative;
+    padding: 10px;
+}
+
+.box1 {
+    width: 400px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.one {
+    font-size: 32px;
+    font-weight: 800;
+}
+@media screen and (max-width:432px) {
+    .box{
+        width:382px;
+    }
+    .box1{
+        width:362px;
+    }
+}
+@media screen and (max-width:392px) {
+    .box{
+        width:315px;
+        height:650px;
+    }
+    .box1{
+        width:295px;
+    }
+    .boxx{
+        height:700px
+    }
+}
+
+.form {
+    padding-top: 8px;
+    /* display: flex; */
+    align-items: center;
+    /* flex-direction: row; */
+    text-align: left;
+    /* justify-content: left; */
+    padding: 20px 0px;
+
+}
+
+.form input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+.form input[type="radio"]:checked {
+    background-color: black;
+    /* Your desired color */
+    border-color: rgb(205, 201, 201);
+}
+
+.form input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.email1,
+.sms {
+    display: none;
+    /* margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px; */
+}
+
+.email1 {
+    display: block;
+}
+
+.r1 {
+    text-align: left;
+}
+
+.r1 label {
+    padding-left: 6px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    width: 430px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(177, 176, 176);
+    margin-bottom: 30px;
+}
+
+.btn.error {
+    border-color: red;
+}
+
+.btn-red:hover {
+    background-color: #c82333;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0;
+    display: none;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 13px 160px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 452px;
+}
+
+.box1 p b u {
+    padding-top: 25px;
+    font-size: 14px;
+    color: rgb(5, 0, 0);
+    cursor: pointer;
+}
+
+@media screen and (max-width:432px) {
+    .btn-red{
+         padding: 13px 115px;
+         width: 320px;
+    }
+    .btn{
+        width: 300px;
+    }
+}
+@media screen and (max-width:392px) {
+    .btn-red{
+        padding: 13px 90px;
+         width: 265px;
+    }
+    .btn{
+        width:245px;
+    }
+}
+
+
+
+.learn p u{
+    color: white;
+    cursor: pointer;
+}
+
+
+.learn {
+    margin-top: 10px;
+    color: white;
+    width: 500px;
+    text-align: left;
+    font-size: 13px;
+    color: grey;
+}
+@media screen and (max-width:432px) {
+    .learn{
+        width:370px;
+}
+}
+@media screen and (max-width:392px) {
+    .learn{
+        width:340px;
+    }
+}
+@media screen and (max-width:378px) {
+    .learn{
+        width:340px;
+    }
+}
+
+footer {
+    color: rgb(182, 178, 178);
+    /* max-width: 85vw; */
+    margin: auto;
+    text-align: left;
+    width: 99vw;
+    /* margin-top: 30px; */
+    background-color: rgb(19, 19, 19);
+    position: relative;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: rgb(182, 178, 178);
+    padding: 14px;
+    text-align: left;
+    width: 80vw;
+    position: relative;
+    padding-left: 190px;
+}
+
+
+
+.footer-itm {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer .query {
+    /* margin: 2px 30vw; */
+    text-align: left;
+    padding: 34px 0px 0px 0px;
+    font-size: 16px;
+    padding-left: 190px;
+}
+
+.footer a {
+    color: rgb(182, 178, 178);
+    font-size: 14px;
+}
+
+footer .query u {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width:825px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 14px;
+        padding-left: 35px;
+    }
+
+    footer .query {
+        padding-left: 35px;
+    }
+
+    .footer-itm {
+        gap: 20px;
+    }
+
+}
+
+
+.btn12 {
+    padding: 4px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(128, 128, 128, 0.396);
+    background-color: rgb(0, 0, 0);
+    margin-left: 8px;
+    position: relative;
+}
+
+.sankar {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.footer-lang {
+    position: relative;
+    padding-left: 180px;
+    margin-top: 10px;
+}
+
+.symbol {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 11;
+    /* top: 10px; */
+    left: 195px;
+    bottom: 12px;
+}
+
+@media screen and (max-width:825px) {
+    .footer-lang {
+        padding-left: 25px;
+    }
+
+    .itm1 {
+        margin-top: 20px;
+    }
+
+    .symbol {
+        left: 40px
+    }
+}
