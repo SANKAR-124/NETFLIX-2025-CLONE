@@ -73,7 +73,49 @@ nav img {
         width:100px;
     }
 }
-@media screen and (max-width:541px) {
+@media screen and (max-width:521px) {
+    nav{
+        gap:50%;
+    }
+    nav img{
+        width:100px
+    }
+    .btn1{
+        padding: 5px 16px;
+    }
+    main{
+        height:110vh;
+    }
+}
+@media screen and (max-width:501px) {
+    nav{
+        gap:50%;
+    }
+    nav img{
+        width:100px
+    }
+    .btn1{
+        padding: 5px 16px;
+    }
+    main{
+        height:110vh;
+    }
+}
+@media screen and (max-width:481px) {
+    nav{
+        gap:50%;
+    }
+    nav img{
+        width:100px
+    }
+    .btn1{
+        padding: 5px 16px;
+    }
+    main{
+        height:110vh;
+    }
+}
+@media screen and (max-width:461px) {
     nav{
         gap:50%;
     }
