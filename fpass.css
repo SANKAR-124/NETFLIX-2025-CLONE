@@ -130,6 +130,15 @@ nav img {
     }
 }
 @media screen and (max-width:432px) {
+    nav{
+        gap:50%;
+    }
+    nav img{
+        width:100px
+    }
+    .btn1{
+        padding: 5px 16px;
+    }
     main{
         height: 110vh;
     }
