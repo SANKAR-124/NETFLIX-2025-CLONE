@@ -49,20 +49,7 @@ nav img {
     cursor: pointer;
     border: 2px solid rgba(128, 128, 128, 0.396);
 }
-@media screen and (max-width:541px) {
-    nav{
-        gap:50%;
-    }
-    nav img{
-        width:100px
-    }
-    .btn1{
-        padding: 5px 16px;
-    }
-    main{
-        height:110vh;
-    }
-}
+
 @media screen and (max-width:1025px) {
     main{
         height: 76vh;
@@ -84,6 +71,20 @@ nav img {
     }
     nav img{
         width:100px;
+    }
+}
+@media screen and (max-width:541px) {
+    nav{
+        gap:50%;
+    }
+    nav img{
+        width:100px
+    }
+    .btn1{
+        padding: 5px 16px;
+    }
+    main{
+        height:110vh;
     }
 }
 @media screen and (max-width:432px) {
@@ -134,6 +135,11 @@ nav img {
 .one {
     font-size: 32px;
     font-weight: 800;
+}
+@media screen and (max-width:545px) {
+    .box{
+        width:480px;
+    }
 }
 @media screen and (max-width:432px) {
     .box{
@@ -266,7 +272,15 @@ nav img {
     color: rgb(5, 0, 0);
     cursor: pointer;
 }
-
+@media screen and (max-width:545px) {
+    .btn-red{
+        padding: 13px 115px;
+         width: 395px;
+    }
+    .btn{
+        width: 375px;
+    }
+}
 @media screen and (max-width:432px) {
     .btn-red{
          padding: 13px 115px;
