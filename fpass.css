@@ -73,7 +73,7 @@ nav img {
         width:100px;
     }
 }
-@media screen and (max-width:521px) {
+@media screen and (max-width:545px) {
     nav{
         gap:50%;
     }
@@ -131,7 +131,7 @@ nav img {
 }
 @media screen and (max-width:432px) {
     main{
-        height: 90vh;
+        height: 110vh;
     }
 }
 @media screen and (max-width:392px) {
